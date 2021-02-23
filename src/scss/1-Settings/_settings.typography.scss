@@ -1,0 +1,76 @@
+/** =====================================================================================
+ *  Defines the typographic baseline.
+ *  We define every size in pixels, the underlying system converts the
+ *  respective units to the responsive REM value.
+ ===================================================================================== */
+
+/**
+ * Our base font-size and line-height
+ */
+$base-font-size: 14 !default;
+$base-line-height: 18 !default;
+$line-height-ratio: $base-line-height/$base-font-size !default;
+
+$font-sizes: (
+        ex-sm-2: 8,
+        ex-sm: 10,
+        xs-sm: 11,
+        sm: 12,
+        md-sm: 13,
+        base: $base-font-size,
+        ex-md: 15,
+        sm-md : 16,
+        sm-md-2: 17,
+        md: 18,
+        mid: 19,
+        lg-md: 20,
+        xl-md: 21,
+        xl-md-2: 22,
+        xs-lg: 23,
+        ex-lg: 24,
+        sm-lg: 25,
+        small-lg: 26,
+        mid-lg: 27,
+        md-lg: 28,
+        md-lg-2: 30,
+        md-lg-3: 31,
+        md-lg-4: 34,
+        lg: 36,
+        l-lg: 40,
+        l-lg-2: 41,
+        l-lg-3: 43,
+        xl-lg: 45,
+        xl-lg-2: 46,
+        sm-xl: 50,
+        xl: 62,
+
+);
+
+/**
+ *	Here we assign short names for the font families
+ */
+$font-montserrat: 'Montserrat', sans-serif;
+$font-merriweather: 'Merriweather', serif;
+
+$font-gotham-book: 'Gotham-Book', Helvetica, Arial, sans-serif;
+$font-gotham-medium: 'Gotham-Medium', Helvetica, Arial, sans-serif;
+$font-gotham: 'Gotham-Book', Helvetica, Arial, sans-serif;
+$font-open-sans: sans-serif;
+$font-roboto: 'Roboto', sans-serif;
+
+$_font-system: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+$font-families: (
+        base: $font-montserrat,
+        secondary: $font-merriweather,
+        gotham-book: $font-gotham-book,
+        gotham-medium: $font-gotham-medium,
+        gotham: $font-gotham,
+        open-sans: $font-open-sans,
+        roboto: $font-roboto,
+
+
+  // Fallback font
+        system: $_font-system
+);
+
