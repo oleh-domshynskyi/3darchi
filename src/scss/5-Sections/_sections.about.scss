@@ -1,0 +1,28 @@
+.s-about {
+    background-color: palette(primary);
+    padding: 30px 0;
+
+    .container {
+        padding: 40px 0;
+        border-top: 1px solid rgba(palette(color-white), 0.2);
+    }
+}
+
+.s-about__title {
+    text-align: center;
+    text-transform: uppercase;
+    color: palette(color-white);
+
+    @include mq($md) {
+        text-align: right;
+        @include font(lg, 85, 700);
+    }
+}
+
+.s-about__description {
+    color: palette(color-white);
+    
+    @include mq($md) {
+        @include font(base, 42, 100);
+    }
+}

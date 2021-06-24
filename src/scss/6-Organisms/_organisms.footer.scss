@@ -1,0 +1,76 @@
+.o-footer {
+    padding: 35px 0 20px;
+    background-color: palette(secondary);
+    .c-social {
+        justify-content: center;
+    }
+}
+
+.o-footer__order {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    
+    @include mq($md) {
+        justify-content: flex-start;
+    }
+}
+
+.o-footer__order-wrap {
+    padding: 20px 30px;
+    border-radius: 30px;
+    color: palette(color-white);
+    background-color: palette(primary);
+    @include font(base, 26, 700);
+    text-transform: uppercase;
+
+    @include mq($md) {
+        @include font(xs-lg, 40, 700);
+        margin: 0 0 60px 40%;
+    }
+
+    @include mq($lg) {
+        margin: 0 0 120px 45%;
+        @include font(lg, 60, 700);
+    }
+}
+
+.o-footer__tel {
+    display: block;
+    text-align: center;
+    margin-bottom: 50px;
+    color: palette(primary);
+    @include font(md-sm, 24, 700);
+
+    @include mq($sm) {
+        @include font(base, 26, 700);
+    }
+
+    @include mq($md) {
+        @include font(xs-lg, 40, 700);
+    }
+
+    @include mq($lg) {
+        @include font(lg, 60, 700);
+    }
+}
+
+.o-footer__email {
+    display: block;
+    text-align: center;
+    margin-bottom: 100px;
+    color: palette(primary);
+    @include font(md-sm, 24, 700);
+
+    @include mq($sm) {
+        @include font(base, 26, 700);
+    }
+
+    @include mq($md) {
+        @include font(xs-lg, 40, 700);
+    }
+
+    @include mq($lg) {
+        @include font(lg, 60, 700);
+    }
+}

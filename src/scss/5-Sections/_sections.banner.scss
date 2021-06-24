@@ -1,0 +1,32 @@
+.s-banner {
+    padding: 100px 0 50px;
+    background-image: url(../../img/global/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.s-banner__subtitle {
+    margin-bottom: 50px;
+    text-align: center;
+    color: palette(color-white);
+    @include font(sm, 18, 400);
+}
+
+.s-banner__title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: palette(color-white);
+    @include font(xl, 84, 600);
+}
+
+.s-banner__description {
+    margin-bottom: 60px;
+    text-align: center;
+    color: palette(color-white);
+    @include font(md, 30, 400);
+}
+
+.s-banner__arrow {
+    margin: 0 auto;
+}

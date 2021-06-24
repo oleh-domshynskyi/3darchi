@@ -28,9 +28,9 @@ body {
 
 
   .container{
-    // max-width: 480px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 480px;
+    padding-left: 20px;
+    padding-right: 20px;
 
     @include mq(768) {
       max-width: 708px;

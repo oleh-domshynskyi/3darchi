@@ -1,0 +1,58 @@
+.c-option {
+    
+    margin: 30px 0;
+}
+
+.c-option__top {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.c-option__body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.c-option__number {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg);
+    background-color: palette(color-grey);
+
+
+    &::before {
+        counter-increment: section;
+        content: counter(section) ".";
+        
+        position: absolute;
+        top: 4%;
+        left: 35%;
+        transform: rotate(-45deg);
+        display: inline-block;
+        color: palette(secondary);
+        @include font(lg, 85, 700);
+    }
+}
+
+.c-option__title {
+    margin-left: 30px;
+    color: palette(secondary);
+    @include font(xs-lg, 55, 500);
+}
+
+.c-option__description {
+    color: palette(color-white);
+    @include font(base, 34, 100);
+    width: 70%;
+    padding: 0 50px;
+}
+
+.c-option__img {
+    width: 30%;
+
+    img {
+        max-height: 400px;
+    }
+}

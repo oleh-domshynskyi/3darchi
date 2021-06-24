@@ -7,42 +7,18 @@
 /**
  * Our base font-size and line-height
  */
-$base-font-size: 14 !default;
-$base-line-height: 18 !default;
+$base-font-size: 22 !default;
+$base-line-height: 26 !default;
 $line-height-ratio: $base-line-height/$base-font-size !default;
 
 $font-sizes: (
-        ex-sm-2: 8,
-        ex-sm: 10,
-        xs-sm: 11,
-        sm: 12,
-        md-sm: 13,
+        sm: 14,
+        md-sm: 20,
         base: $base-font-size,
-        ex-md: 15,
-        sm-md : 16,
-        sm-md-2: 17,
-        md: 18,
-        mid: 19,
-        lg-md: 20,
-        xl-md: 21,
-        xl-md-2: 22,
-        xs-lg: 23,
-        ex-lg: 24,
-        sm-lg: 25,
-        small-lg: 26,
-        mid-lg: 27,
-        md-lg: 28,
-        md-lg-2: 30,
-        md-lg-3: 31,
-        md-lg-4: 34,
-        lg: 36,
-        l-lg: 40,
-        l-lg-2: 41,
-        l-lg-3: 43,
-        xl-lg: 45,
-        xl-lg-2: 46,
-        sm-xl: 50,
-        xl: 62,
+        md: 28,
+        xs-lg: 36,
+        lg: 55,
+        xl: 72,
 
 );
 

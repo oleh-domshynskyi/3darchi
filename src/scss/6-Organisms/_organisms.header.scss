@@ -1,6 +1,5 @@
 .o-header {
     padding: 10px 0;
-    border-bottom: 1px solid black;
     background-color: rgb(250, 250, 250);
     .container {
         @include mq($lg) {
@@ -13,29 +12,61 @@
     }
 }
 
+.o-header__mob {
+    transform: translate(-250px, 0);
+    width: 250px;
+    padding: 30px 0 10px;
+    background-color: palette(secondary);
+
+    &.open-menu {
+        transform: translate(0, 0);
+    }
+
+    .c-social {
+        justify-content: flex-start;
+    }
+}
+
+.o-header__mob-open {
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+}
+
 .o-header__nav {
-    display: flex;
+
+    @include mq($xl) {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+
+    @include mq(1300) {
+        justify-content: flex-start;
+    }
 }
 
 .o-header__nav-item {
-    margin-right: 25px;
+    margin-right: 5px;
+    color: palette(text);
+    @include font(md-sm, 24, 300);
+
+    @include mq(1300) {
+        margin-right: 25px;
+    }
+
+    &:hover {
+        cursor: pointer;
+        color: palette(secondary);
+    }
 }
 
 .o-header__logo {
-    margin: 0 auto;
+    margin: 0 auto 15px;
     max-width: 200px;
-}
 
-.o-header__social {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.o-header__social-item {
-    margin: 0 10px;
-    img {
-        max-width: 25px;
+    @include mq($xl) {
+        margin-bottom: 0;
     }
-    
 }
+
